@@ -1,0 +1,61 @@
+.loginHeader{
+    background: none !important;
+    i{
+        font-size: 0.5rem !important;
+        z-index: 999999;
+    }
+}
+
+.loginCenter{
+    margin-top: 0.5rem;
+    padding:1.625rem 1.25rem;
+    p{
+         margin: 0;
+        input{
+        border-bottom: 0.025rem solid #d1d1d1;
+            height: 2rem;
+            width: 100%;
+        }
+    }
+    #login{
+        height: 1.875rem;
+        margin-top: 0.75rem;
+        display: inline-block;
+        width: 100%;
+        color: white;
+        border: none;
+    }
+    .introduce{
+        font-size: 0.3rem;
+       color: #d1d1d1;
+       margin-top: 1.25rem;
+       a{
+            color: black;
+            
+       }
+    }
+    .other{
+        margin-top: 5rem;
+        padding:0% 35%;
+        width: 100%;
+        border: none;
+        border-top: 0.025rem solid #c3c3c3;
+        legend{
+           border: none;
+            text-align: center;
+            font-size: 0.3rem;color: #c3c3c3;
+        }
+        .weixin{
+            width: 2.75rem;
+            height: 2.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.025rem solid #c3c3c3;
+            border-radius: 100%;
+            margin-top: 90%;
+            img{width: 60%;height: 60%;}
+        }
+        
+    }
+}

@@ -1,0 +1,134 @@
+.container .swipperImage {
+  height: 14rem;
+  width: 100%;
+  padding: 0 20%; }
+  .container .swipperImage img {
+    width: 100%;
+    height: 100%; }
+
+.detailsBox {
+  background: #fff;
+  padding-bottom: 20px; }
+  .detailsBox .pro-title {
+    padding: 0 24px;
+    color: #333;
+    position: relative; }
+    .detailsBox .pro-title h3 {
+      font-size: 24px;
+      color: #333;
+      line-height: 29px;
+      padding-top: 10px; }
+    .detailsBox .pro-title span {
+      font-size: 14px;
+      line-height: 18px; }
+    .detailsBox .pro-title .add-to-cart {
+      width: 4.5rem;
+      height: 1.5rem;
+      border: 0.025rem solid;
+      position: absolute;
+      top: 0.425rem;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      left: 11rem;
+      background: black; }
+      .detailsBox .pro-title .add-to-cart span {
+        font-size: 0.5rem;
+        color: #FFFFFF; }
+  .detailsBox .price-label {
+    margin-top: 4px;
+    height: 30px; }
+    .detailsBox .price-label span {
+      display: inline-block; }
+    .detailsBox .price-label .top-price {
+      font-size: 22px;
+      color: #C69C6D;
+      padding-left: 24px;
+      height: 30px;
+      line-height: 30px; }
+  .detailsBox .details-explain {
+    color: #969696;
+    display: block;
+    padding: 0 24px;
+    margin: 5px 0;
+    font-size: 0.3rem; }
+  .detailsBox .pro-details-label {
+    padding: 5px 24px; }
+    .detailsBox .pro-details-label a {
+      display: inline-block;
+      line-height: 18px;
+      color: #D5BFA7;
+      font-size: 0.3rem;
+      padding: 0 12px;
+      border: 1px solid #D5BFA7;
+      border-radius: 100px;
+      margin-right: 6px; }
+  .detailsBox .select-card {
+    background: #FFF;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 0 20px;
+    overflow: hidden; }
+    .detailsBox .select-card .select-specifications {
+      line-height: 2.125rem;
+      border-bottom: none;
+      background: rgba(199, 178, 153, 0.2);
+      margin: 0;
+      padding-left: 14px; }
+      .detailsBox .select-card .select-specifications li {
+        border: none; }
+        .detailsBox .select-card .select-specifications li a {
+          display: block;
+          color: black;
+          font-size: 0.375rem; }
+    .detailsBox .select-card .details-options-card {
+      font-size: 0.3rem;
+      margin: 18px 14px 8px;
+      border-bottom: 1px solid #D2D2D2; }
+      .detailsBox .select-card .details-options-card .details-options {
+        overflow: hidden;
+        width: 100%; }
+        .detailsBox .select-card .details-options-card .details-options li {
+          float: left;
+          width: 50%;
+          margin-bottom: 4px;
+          color: #482618; }
+          .detailsBox .select-card .details-options-card .details-options li i {
+            font-size: 0.6rem !important; }
+    .detailsBox .select-card .store-info {
+      background-color: #fff;
+      margin-bottom: 14px; }
+      .detailsBox .select-card .store-info li {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 8px; }
+        .detailsBox .select-card .store-info li img {
+          height: 15px;
+          width: auto;
+          display: block;
+          vertical-align: top;
+          float: left;
+          margin-left: 17px; }
+        .detailsBox .select-card .store-info li i {
+          font-size: 0.375rem !important;
+          position: absolute;
+          top: 0;
+          left: 0.75rem; }
+        .detailsBox .select-card .store-info li span {
+          margin-left: 14.7 0.75rem;
+          display: block;
+          vertical-align: top;
+          width: 5.25rem;
+          text-align: center;
+          margin: 0 10px;
+          float: left;
+          font-size: 0.375rem; }
+        .detailsBox .select-card .store-info li div {
+          width: 100%;
+          float: left;
+          margin-left: -129px; }
+          .detailsBox .select-card .store-info li div p {
+            padding-left: 129px;
+            padding-right: 15px;
+            font-size: 0.3rem; }

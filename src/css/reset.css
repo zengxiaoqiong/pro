@@ -1,0 +1,43 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none;color: black;}
+ul li{list-style: none;}
+img{display: block;}
+html{width: 100%;}
+html,body{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+
+@keyframes fan{
+	0%{transform:rotateY(0)}
+	100%{ transform:rotateY(180deg)}
+}
+
+/*iphone 6plus*/
+@media only screen and (min-width:414px ) {
+html,body{font-size: 25.875px !important;}
+}
+
+@media only screen and (min-width:375px ) {
+html,body{font-size: 23.4375px !important;}
+}
+@media only screen and (min-width:320px ) {
+html,body{font-size:20px !important;}
+}
+
+/* ipad横屏 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+html,body{font-size: 48px !important;}
+}
+
+/* ipad竖屏 */
+@media (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+html,body{font-size: 64px !important;}

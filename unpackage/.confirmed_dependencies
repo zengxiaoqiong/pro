@@ -1,0 +1,47 @@
+{
+	"src/temp/login.html": {
+		"resources": [
+			"dist/img/weixin.jpg"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"src/css/classify.css",
+			"src/css/detail.css",
+			"src/temp/detail.html",
+			"src/temp/my.html",
+			"src/font/iconfont.css",
+			"src/temp/community.html",
+			"src/js/zepto_1.1.3.js",
+			"src/css/index.css",
+			"src/css/my.css",
+			"src/temp/idxCon.html",
+			"src/temp/login.html",
+			"src/css/reset.css",
+			"src/img/logo.png",
+			"src/css/login.css",
+			"src/js/index.js",
+			"dist/css/cart.css"
+		]
+	},
+	"src/index.html": {
+		"resources": [
+			"src/css/classify.css",
+			"src/css/detail.css",
+			"src/css/my.css",
+			"src/css/cart.css",
+			"src/css/reset.css",
+			"src/font/iconfont.css",
+			"src/css/login.css",
+			"src/css/index.css",
+			"src/temp/detail.html",
+			"src/temp/my.html",
+			"src/temp/community.html",
+			"src/js/zepto_1.1.3.js",
+			"src/temp/idxCon.html",
+			"src/temp/login.html",
+			"src/js/index.js",
+			"src/img/logo.png"
+		]
+	}
+}

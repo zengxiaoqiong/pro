@@ -1,0 +1,26 @@
+<ion-view view-title="登录">
+    <ion-content>
+        <!--头部-->
+    	<ion-nav-bar class-"loginHeader">
+    		<i class="icon iconfont icon-xiangyou"></i>
+    	</ion-nav-bar>
+    	
+    	<!--中间内容-->
+    	<div class="loginCenter"  ng-controller="login" > 
+    		<p><input type="text" id="tel" ng-model="tel" placeholder="手机号码" /></p>
+	    	<p><input type="password" id="pwd" ng-model="pwd"  placeholder="请输入密码" "/></p>
+	    	<p><input type="password" id="pwd1" ng-model="pwd1" placeholder="确认密码" " /></p>
+	    	<input type="submit" id="login" ng-click="_login()" value="登录"/>
+    		<p class="introduce">使用为注册的手机号登录时，将自动注册21cake账号,且认为您已阅读<a href="#">《21cake用户协议》</a></p>
+    		
+    		<fieldset class="other">
+    			<legend>其他登录方式</legend>
+    			<div class="weixin">
+					<img src="../../dist/img/weixin.jpg" alt="" />  				
+    			</div>
+    		</fieldset>
+    		
+    	</div>
+    	
+	</ion-content>
+</ion-view>

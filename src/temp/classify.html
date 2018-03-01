@@ -1,0 +1,84 @@
+<ion-view>
+    <ion-content>
+     	<!--分类导航条-->
+     	<ion-scroll class="classifyNav" zooming="true" paging="true" direction="x" scrollbar-x="false">
+     		<a href="#"  class="active">蛋糕</a>
+     		<a href="#" >冰淇淋</a>
+     		<a href="#" >小切块</a>
+     		<a href="#" >咖啡</a>
+     		<a href="#" >常温蛋糕</a>
+     		<a href="#" >设计师专区</a>
+     	</ion-scroll>
+     	
+     	<!--商品列表-->
+     	<div class="listBox">
+     		<ul class="cakeList">
+     			<li id="list-goods-631" ng-repeat="data in thisData track by $index">
+     				<div>
+     					<div class="list-pro-content">
+     						<input type="hidden" class="id" value="{{data.product_id}}" />
+     						<a title="枣儿" id="{{data.cake_goods}}" href="#classify/detail/{{data.product_id}}">
+     							<div class="list-pro-img" style="height: 3.6575rem;">
+     								<img class="lazy" src="{{data.imgSrc}}" alt="枣儿" style="opacity: 1;" />
+     							</div>
+     							<h3><span>{{data.name}}</span></h3>
+     							<span class="price">¥{{data.price}}/{{data.spec}}</span>
+     						</a>
+     						<a href="javascript:void(0);" class="cart-add" name="cart-add_631" ng-click="addToCart()" data-id="{{data.cat_id}}">
+     							<img src="img/list-cart.png">
+     						</a>
+     					</div>
+     				</div>
+     			</li>
+     		</ul>
+     	</div>
+    </ion-content>
+    <!--遮罩-->
+     	<div class="bomb-box" id="add-cart-pop" ng-style="zhezhao" style="display: none; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+		 
+		    <div class="bomb-box-content" style="bottom: 50%; margin-bottom: -217.5px;">
+		       <i class="icon iconfont icon-cha" ng-click="close()" ng-style="hide"></i>
+		        <div class="bomb-box-content-text">
+		            <div class="details-suspension">
+		                <div class="details-suspension-content">
+		                    <p class="details-price" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">¥{{data.price}}</p>
+		                    <ul class="details-options" hidden="" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+		                    	<li class="details-options-size">
+		                    		<i></i>17x17cm</li>
+		                    	<li class="details-options-unmber">
+		                    		<i></i>适合7-8人分享
+		                    	</li>
+	                    		<li class="details-options-laid">
+	                    			<i></i>含10套餐具
+	                    		</li>
+		                    	<li class="details-options-time">
+		                    		<i></i>须提前6小时预订
+		                    	</li>
+		                    </ul>
+		                    <img class="size-img" src="img/1.png"/>
+		                    <!--<img src="/themes/wap/img/2.00P-full-17.00.jpg" alt="" class="size-img" hidden="" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">-->
+		                    <div class="extra-box" hidden="" style="display: none;">
+		                        <p class="spec-title">商品规格</p>
+		                        <ul class="details-suspension-size-extra">
+		                        </ul>
+		                    </div>
+		                    <div class="normal-box" hidden="" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+		                        <p class="spec-title">商品规格</p>
+		                        <ul class="details-suspension-size">
+		                        	<li data-productid="365">1.0磅</li>
+		                        	<li data-productid="371">1.5磅</li>
+		                        	<li class="active" data-productid="377">2.0磅</li>
+		                        	<li data-productid="383">3.0磅</li>
+		                        	<li data-productid="389">5.0磅</li>
+		                        </ul>
+		                    </div>
+		                    <a href="javascript:void(0);" class="add-cart-buttn join-cart" ng-click="addToCartSure()" name="add-cart-button_12" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">加入购物车<span>(¥{{data.price}})</span></a>
+		                    <a href="javascript:void(0);" class="add-cart-buttn sell-out-list" name="add-cart-button_12" style="display: none;">敬请期待</a>
+		                    <a href="tel:400 650 2121" class="add-cart-buttn contact-service" name="add-cart-button_12" style="display: none;"><i></i>联系客服</a>
+		                </div>
+		            </div>
+		        </div>
+   			 </div>
+		</div>
+  </ion-view>
+	

@@ -1,0 +1,128 @@
+<ion-view class="content"> 
+	<ion-content>
+		<!--下拉刷新-->
+		  <ion-refresher
+		    pulling-text="下拉刷新..."
+		    on-refresh="doRefresh()">
+		  </ion-refresher>
+	 <!--轮播图-->
+		<ion-slide-box class="banner" active-slide="myActiveSlide" ng-style="bannerStyle" auto-play="true" does-continue="true"> 
+		    <ion-slide>
+		      <div class="box blue"><img src="img/b52624cd131b935e3c5da646d55e8979.jpg"/></div>
+		    </ion-slide>
+		    <ion-slide>
+		      <div class="box yellow"><img src="img/03ca8339fe8ebd43ce8593bf46221fcd.jpg"/></div>
+		    </ion-slide>
+		    <ion-slide>
+		      <div class="box pink"><img src="img/d9a95caffac05eb62193ee56c395b480.jpg"/></div>
+		    </ion-slide>
+		    <ion-slide>
+		      <div class="box pink"><img src="img/b52624cd131b935e3c5da646d55e8979.jpg"/></div>
+		    </ion-slide>
+		</ion-slide-box>
+		
+		<!--中间导航-->
+		<ul class="navLink">
+		  <li class="box">
+		   <div class="radius"><img src="img/b24fa9c0d277b79493fead122afe8e73.png"/></div>
+		   <span>蛋糕</span>
+		  </li>
+		  <li class="box">
+		    <div class="radius"><img src="img/6b2bb02a6d83ca8f36f0eaafebe3b1b3.png"/></div>
+		    <span> 咖啡</span>
+		  </li>
+		  <li class="box">
+		    <div class="radius"><img src="img/a22e889a75b6db374db1451015a47c24.png"/></div>
+		      <span> 蛋糕</span>
+		  </li>
+		  <li class="box">
+		   <div class="radius"><img src="img/6d777e1d3aa1681d58ea1640f53e2920.png"/></div>
+		   <span> 企业专区</span>
+		  </li>
+		</ul>
+		
+		<div class="products">
+			<h3>廿一客.榜单</h3>
+			<ion-scroll class="ionImg" zooming="true" paging="true" direction="x" scrollbar-x="false">
+				<a class="imgbox" ><img src="img/shuiguo.jpg"/></a>
+				<a class="imgbox imgbox1" ><img src="img/9bfa8ea6a193c5877646c375119515ef.jpg"/></a>
+				<a class="imgbox" ><img src="img/shuiguo.jpg"/></a>
+			</ion-scroll>
+		</div>
+			
+			<div class="products">
+				<h3>廿一客.新品</h3>
+				<a class="tuijian imga"><img src="img/zhuanqu1.jpg"/></a>
+				<ion-scroll class="ionImg tuijianScro" zooming="true" paging="true" direction="x" scrollbar-x="false">
+					<a class="imgScro"> <img src="img/14593363138999.jpg"/>枣儿</a>
+					<a class="imgScro"><img src="img/14593370463186.jpg"/>黑森林</a>
+					<a class="imgScro"><img src="img/1459337079137.jpg"/>黑越橘</a>
+					<a class="imgScro"><img src="img/shuiguo.jpg"/>深艾尔</a>
+					<a class="imgScro"><img src=" img/8d8bc144cd477322cd944d135805c4b9.jpg"/>新卡</a>
+			    </ion-scroll>	
+		   	</div>
+		
+			<div class="products">
+				<h3>廿一客.推荐</h3>
+				<a class="tuijian imga"><img src=" img/zhuanqu1.jpg"/></a>
+				<ion-scroll class="ionImg tuijianScro" zooming="true" paging="true" direction="x" scrollbar-x="false">
+					<a class="imgScro"><img src="img/8d8bc144cd477322cd944d135805c4b9.jpg"/>百丽甜情人</a>
+					<a class="imgScro"><img src="img/1459337079137.jpg"/>芒果奶油蛋糕</a>
+					<a class="imgScro"><img src="img/8d8bc144cd477322cd944d135805c4b9.jpg"/>卡百利</a>
+					<a class="imgScro"><img src="img/8d8bc144cd477322cd944d135805c4b9.jpg"/>黑白撒粉生日</a>
+					<a class="imgScro"><img src="img/f5c184a98afac9e350304232c69b2bc5.jpg"/>新卡</a>
+					<a class="imgScro"><img src="img/a447e5ccf956dcb889fe44674ebf214f.jpg"/>松仁蛋奶</a>
+			    </ion-scroll>	
+		   	</div>
+			
+			
+			<!--活动-->
+			<div class="products">
+				<h3>廿一客.活动</h3>
+				<div class="bottom">
+					<ion-slide-box class="banner1" active-slide="myActiveSlide" ng-style="bannerStyle" auto-play="true" does-continue="true"> 
+					    <ion-slide>
+					      <div class="actives">
+								<div class="left">
+									<h4>新课权益</h4>
+									<a class="click" href="#">点击查看</a>
+									<span class="time">只剩161天</span>
+								</div>
+								<div class="right">
+									<img src=" img/9bfa8ea6a193c5877646c375119515ef.jpg"/>
+								</div>
+							</div>
+					    </ion-slide>
+					   <ion-slide>
+					      <div class="actives">
+							<div class="left">
+								<h4>拜个早年</h4>
+								<a class="click" href="#">即日起订购【枣套餐】蛋糕，..</a>
+								<span class="time">只剩四天</span>
+							</div>
+							<div class="right">
+								<img src=" img/0c1dbbf544cbd1d2f242b4eb29708fd0.jpg"/>
+							</div>
+						 </div>
+					    </ion-slide>
+					</ion-slide-box>
+				</div>
+			</div>
+			
+			
+		   		<!--下拉加载-->
+				<ion-infinite-scroll
+				    on-infinite="loadMore()"
+				    distance="1%">
+				</ion-infinite-scroll>
+	</ion-content>
+	
+	
+	
+	
+	<!--底部-->
+	
+</ion-view>
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="src/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="src/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css"/>
+		<script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="dist/css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/classify.css"/>
+		<link rel="stylesheet" type="text/css" href="src/css/index.css"/>
+	</head>
+	<body>
+		<div ng-app="pro" ng-controller="demo">
+				<!--头部-->
+				<ion-nav-bar class="head" >
+			  		<img src="src/img/logo.png"/>
+			  		<div class="city">
+			  			 <i class="icon iconfont icon-dingwei"></i>
+			  			 <span>点击选择城市</span>
+			  		</div>
+				</ion-nav-bar>
+	  			<!--单页面内容部分-->
+				<ion-nav-view>
+				  <!-- 中间内容 -->
+				</ion-nav-view>
+				
+				<ion-footer-bar  align-title="left" class="bar-assertive"  style="padding: 0;">
+					<div class="tabs tabs-icon-top" >
+					  <a class="tab-item activei" ui-sref="index">
+					    <i class="icon iconfont icon-shouye1" ></i>
+					    首页
+					  </a>
+					  <a class="tab-item" ui-sref="classify" ui-sref="classify">
+					     <i class="icon iconfont icon-fenlei"></i>
+					    分类
+					  </a>
+					  <a class="tab-item" ui-sref="cart">
+					    <i class="icon iconfont icon-gouwuche"></i>
+					    购物车
+					  </a>
+					   <a class="tab-item" ui-sref="community">
+					     <i class="icon iconfont icon-shebao"></i>
+					    社区
+					  </a>
+					   <a class="tab-item" ui-sref="my">
+					     <i class="icon iconfont icon-wode"></i>
+					    我的
+					  </a>
+					</div>
+				</ion-footer-bar>
+		</div>
+		<script src="src/js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

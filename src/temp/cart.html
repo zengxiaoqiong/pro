@@ -1,0 +1,25 @@
+<ion-view>
+    <ion-content>
+    	<ul class="cartBox">
+    			<li class="cart-object-goods-item scene_area " ng-repeat="data in ids track by $index" data-indent="377" data-quantity="1" data-price="298.000">
+                    <div class="cart-pro-box">
+                        <a href="/product-377.html">
+                        	<img src="{{data.imgSrc}}"/>
+                        </a>
+                        <div class="cart-pro-title">
+                            <a class="aTitle" href="/product-377.html" title="">
+                            	<h2>{{list.en_name}} <span class="title">{{data.name}}</span></h2>
+                            </a>
+                            <span class="bang" >{{data.spec}}</span>
+                            <span class="cart-price" data-amount="298">￥{{data.price}}</span>
+                        </div>
+                    </div>
+                    <div class="cart-pro-number">
+                        <a class="delete action-quantity-minus" ng-click="remove($event).bind(this)">-</a>
+                        <span class="quantity ">{{data.num}}</span>
+                        <a class="action-quantity-plus" ng-click="add($event).bind(this)"> + </a>
+                    </div>
+    		</li>
+    	</ul>
+	</ion-content>
+</ion-view>

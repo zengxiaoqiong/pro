@@ -1,0 +1,70 @@
+
+
+<ion-view>
+
+    <ion-content>
+    	<div class="container">
+    		<div class="swipperImage">
+    			<img src="{{data.imgSrc}}"/>
+    		</div>
+    	</div>
+    	<div class="detailsBox">
+	        <div class="pro-title">
+	        	<div class="add-to-cart" ng-click="addToCart()">
+	        		<span>加入购物车</span>
+	        		<!--<i class="icon iconfont icon-gouwuche"></i>--> 
+	        	</div>
+	            <h3>{{data.en_name}}</h3>
+	            <span>{{data.name}}</span>
+	        </div>
+            <p class="price-label">
+                <span class="top-price">￥{{data.price}}</span>
+            </p>
+	        <span class="details-explain">即日起至1月24日，订购枣儿随单赠糖葫芦2支</span>
+	        <div class="pro-details-label">
+				<a href="/gallery/tag/22.html">{{data.tags[0].content}}&nbsp;›</a>
+				<a href="/gallery/tag/30.html">{{data.tags[1].content}}&nbsp;›</a>
+			</div>
+	        <div class="select-card">
+	            <ul class="select-specifications">
+	                <li><a id="J-specifications">已选择：{{data.spec}}<i></i></a></li>
+	            </ul>
+	            <div class="details-options-card">
+	            	<ul class="details-options">
+	            		<li class="details-options-size">
+	            			<i></i>17x17cm</li>
+	            			<li class="details-options-laid">
+	            				<i></i>含10套餐具
+	            			</li>
+	            				<li class="details-options-unmber">
+	            					<i></i>适合7-8人分享
+	            				</li>
+	            				<li class="details-options-time">
+	            					<i></i>最早今天 18:30配送
+	            				</li>
+	            	</ul>
+	            </div>
+	            <ul class="store-info">
+	            	<li>
+		                <i class="icon iconfont icon-xinshourenwu"></i>                        
+			            <span>保鲜条件</span>
+			            <div><p>0－4℃保藏12小时，5℃食用为佳</p></div>
+		       	    </li>
+	                <li data-sweet="3" id="sweetList">
+	                    <i class="icon iconfont icon-tou"></i>
+	                    <span>参考甜度</span>
+	                    <div>
+	                        <p class="sweet-list">
+	                            <i class="active"></i>
+	                            <i class="active"></i>
+	                            <i class="active"></i>
+	                            <i></i>
+	                            <i></i>
+	                        </p>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+   		 </div>
+    </ion-content>
+</ion-view>

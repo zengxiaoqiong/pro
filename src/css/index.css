@@ -1,0 +1,185 @@
+.head {
+  line-height: 2rem;
+  height: 2rem;
+  width: 100%;
+  background: none;
+  border: 0.025rem solid #f3f3f3; }
+  .head img {
+    position: absolute;
+    left: 50%;
+    top: 0.675rem;
+    display: inline-block;
+    width: 0.75rem !important;
+    margin-left: -0.375rem; }
+  .head .city {
+    float: right;
+    margin-right: 0.5rem; }
+    .head .city i {
+      color: black;
+      display: inline-block;
+      font-size: 0.625rem;
+      background-size: cover;
+      vertical-align: middle;
+      margin-right: 4px;
+      margin-top: -4px; }
+    .head .city span {
+      font-size: 0.625rem;
+      color: #a5a5a5; }
+
+.content {
+  background: #EEEEEE; }
+  .content .has-header {
+    top: 0rem; }
+    .content .has-header .slider-pager {
+      position: absolute;
+      top: 7.54rem;
+      width: 100%;
+      height: 0.19rem;
+      text-align: center; }
+      .content .has-header .slider-pager .slider-pager-page {
+        margin: 0rem 0.6rem;
+        height: 0.125rem;
+        width: 0.125rem;
+        border-radius: 100% !important;
+        border: 0.025rem solid #C69C6D;
+        display: inline-block;
+        color: #C69C6D; }
+      .content .has-header .slider-pager .active {
+        background: #C69C6D; }
+    .content .has-header .banner {
+      height: 8.5rem;
+      width: 100%; }
+      .content .has-header .banner img {
+        width: 100%;
+        height: 100%; }
+  .content .navLink {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.875rem;
+    line-height: 3.875rem;
+    width: 100%; }
+    .content .navLink .box {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .content .navLink .box .radius {
+        width: 3.1rem;
+        text-align: center;
+        height: 3.1rem;
+        line-height: 2.1rem;
+        position: relative; }
+        .content .navLink .box .radius img {
+          height: 0.475rem;
+          width: 100%;
+          height: 100%;
+          color: #e7ddc2; }
+      .content .navLink .box span {
+        font-size: 0.375rem;
+        color: black;
+        height: 1rem;
+        line-height: 1rem;
+        display: inline-block; }
+  .content .products {
+    margin-top: 0.375rem;
+    background: white; }
+    .content .products h3 {
+      text-align: center;
+      font-size: 0.625rem;
+      font-weight: normal;
+      height: 2.5rem;
+      padding-top: 0.875rem; }
+    .content .products .ionImg {
+      padding: 0 0.5rem;
+      width: 100%;
+      height: 6.25rem;
+      display: flex; }
+      .content .products .ionImg .scroll-paging {
+        display: flex; }
+        .content .products .ionImg .scroll-paging a {
+          float: left;
+          width: 9.625rem;
+          height: 6.25rem;
+          display: inline-block; }
+          .content .products .ionImg .scroll-paging a img {
+            width: 100%;
+            height: 100%; }
+        .content .products .ionImg .scroll-paging .imgbox1 {
+          margin: 0rem 0.5rem; }
+  .content .products .imga {
+    display: inline-block;
+    width: 100%;
+    height: 5.75rem; }
+    .content .products .imga img {
+      width: 100%;
+      height: 100%; }
+  .content .products .tuijianScro {
+    padding: 0 0.5rem;
+    width: 100%;
+    height: 6.25rem;
+    display: flex; }
+    .content .products .tuijianScro .scroll-paging .imgScro {
+      float: left;
+      text-align: center;
+      width: 5.35rem;
+      height: 6.3rem;
+      color: black;
+      font-size: 0.375rem;
+      display: inline-block; }
+      .content .products .tuijianScro .scroll-paging .imgScro img {
+        width: 70%;
+        height: 70%;
+        margin-left: 11%; }
+  .content .products .bottom {
+    height: 6.275rem;
+    width: 100%; }
+    .content .products .bottom .banner1 {
+      height: 6.275rem; }
+      .content .products .bottom .banner1 .actives {
+        height: 6.275rem;
+        width: 100%;
+        border: 0.025rem solid #EEEEEE; }
+        .content .products .bottom .banner1 .actives .left {
+          height: 6.275rem;
+          padding: 0.5rem 0rem 0rem 0.5rem;
+          width: 45%;
+          float: left; }
+          .content .products .bottom .banner1 .actives .left h4 {
+            font-size: 0.5rem; }
+          .content .products .bottom .banner1 .actives .left .click {
+            width: 3rem;
+            height: 0rem;
+            color: #dcdcdc;
+            text-decoration: none;
+            font-size: 0.3rem; }
+          .content .products .bottom .banner1 .actives .left .time {
+            color: #cab6ab;
+            font-size: 0.375rem;
+            position: absolute;
+            left: 0.5rem;
+            bottom: 0.625rem; }
+        .content .products .bottom .banner1 .actives .right {
+          width: 55%;
+          float: left;
+          height: 6.275rem; }
+          .content .products .bottom .banner1 .actives .right img {
+            width: 100%;
+            height: 100%; }
+  .content .bar {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.45rem;
+    z-index: 100; }
+    .content .bar .tab-item {
+      font-size: 0.5rem;
+      margin-top: 0.375rem;
+      line-height: 1.8rem !important; }
+      .content .bar .tab-item i {
+        font-size: 0.5rem !important; }
+      .content .bar .tab-item .activei {
+        color: black; }
+
+.tab-item .icon {
+  line-height: 1.8rem !important;
+  font-size: 0.75rem; }
